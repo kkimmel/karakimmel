@@ -84,21 +84,65 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.bg {
+    background: url(../img/forest-phone.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    top: -100px; /* Prevent white space when scrolling mobile devices */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
+@media (min-width: 768px) {
+    .bg {
+        background: url(../img/forest-tablet.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
 
+@media (min-width: 992px) {
+    .bg {
+        background: url(../img/forest-laptop.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
 
+@media (min-width: 1200px) {
+    .bg {
+        background: url(../img/forest-desktop.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+}
 
+img {
+    max-width: 100%;
+}
 
+.row:first-child {
+    margin-top: 10%;
+}
 
+.row:last-child {
+    margin-bottom: 10%;
+}
 
+/* Reorder columns of third row when grid inactive */
+@media (min-width: 550px) {
+    .row:nth-child(3) .columns {
+        float: right;
+    }
+}
 
-
-
-
-
-
-
-
+@media (max-width: 549px) {
+    .row {
+        text-align: center;
+    }
+}
 
 /* ==========================================================================
    Helper classes
@@ -172,23 +216,6 @@ textarea {
 
 .clearfix:after {
     clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
