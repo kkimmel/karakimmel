@@ -132,7 +132,7 @@ img {
 }
 
 @media (max-width: 550px) {
-    .row:first-child .columns:last-child {
+    .index .row:first-child .columns:last-child {
         margin-top: 10%;
     }
 }
@@ -141,9 +141,13 @@ img {
     margin-bottom: 10%;
 }
 
+.reviseabl .row {
+    margin-top: 5%;
+}
+
 /* Reorder columns of third row when grid inactive */
 @media (min-width: 550px) {
-    .row:nth-child(3) .columns {
+    .index .row:nth-child(3) .columns {
         float: right;
     }
 }
