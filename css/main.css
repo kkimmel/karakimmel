@@ -158,6 +158,70 @@ img {
     }
 }
 
+.navigation {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.navigation .arrow {
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 30px;
+    z-index: 99;
+    margin-left: -7px;
+    font-size: 13px;
+}
+
+.navigation .arrow:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -22px;
+    z-index: 1;
+    border: 15px solid transparent;
+    border-left: 7px solid #fff;
+}
+
+.navigation .arrow:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: -23px;
+    border: 15px solid transparent;
+    border-left: 7px solid #999;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navigation .arrow:first-child {
+    margin-left: 0px;
+    z-index: 100;
+}
+
+.navigation .arrow:last-child {
+    z-index: 98;
+}
+
+@media (max-width: 549px) {
+    .navigation .arrow {
+        padding: 0 12px;
+    }
+
+    .navigation .arrow,
+    .navigation a {
+        font-size: 12px;
+    }
+}
+
 .contact {
     text-align: center;
     margin-top: 40px;
@@ -169,6 +233,18 @@ img {
 
 .contact a:last-child {
     margin-left: 10px;
+}
+
+.projects .row.link {
+    border: 1px solid #222;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px #999;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.projects .row.link a {
+    color: #222;
 }
 
 .overlay {
