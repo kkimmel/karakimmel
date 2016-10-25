@@ -141,6 +141,7 @@ img {
     margin-bottom: 10%;
 }
 
+.sagrader .row,
 .reviseabl .row {
     margin-top: 5%;
 }
@@ -241,10 +242,15 @@ img {
     box-shadow: 3px 2px 2px #999;
     padding: 25px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .projects .row.link a {
     color: #222;
+}
+
+.projects .row.link img {
+    min-width: 60%;
 }
 
 .overlay {

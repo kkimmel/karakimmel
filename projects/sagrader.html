@@ -1,0 +1,144 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Kara Kimmel | SAGrader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/skeleton.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="container sagrader">
+            <div class="row navigation">
+                <div class="twelve columns">
+                    <div class="arrow"><a href="../index.html">Kara Kimmel</a></div>
+                    <div class="arrow"><a href="../projects.html">All projects</a></div>
+                    <div class="arrow">SAGrader</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="four offset-by-four columns">
+                    <img src="../img/projects/sagrader/logo.png" alt="SAGrader" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="eight offset-by-two columns">
+                    <p>SAGrader is a modern Perl web application backed by MySQL and Redis. It is a fully featured learning management system used by 4,000 students a year.</p>
+                    <p>Instructors can collaborate with our content developers to create their own custom writing assignments from short answer to full length essays. Students submit to these assignments and receive instant, automated, content-based feedback tailored to their response. Students are encouraged to revise to fully master the topic.</p>
+                    <p>SAGrader's core technology uses natural language processing to do qualitative text analysis of our student's writing. This allows SAGrader to give very detailed, specific feedback instantly to students.</p>
+                    <p>Some of the features I've worked on are described below.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Created a backend service and UI to provide content developers with analytics about how questions are performing.</p>
+                    <p>This tool analyzes how students perform on each concept in the question so content developers can identify which concepts students struggle with.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/question-analytics.png"
+                        alt="question analytics"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Developed a quick creation tool for content developers to rapidly build a skeleton semantic network, significantly speeding up question development.</p>
+                    <p>A simplified version can be demoed <a href="https://www.sagrader.com/rubrics">here</a>.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/rubrics.png"
+                        alt="question analytics"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Redesigned the format of SAGrader's automated feedback, condensing the information and making it easier for students to understand.</p>
+                    <p>This involved completely re-imagining the way we traverse the graph of the student's knowledge and the way we present it to the student.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/feedback.png"
+                        alt="feedback"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Detected and moved many long running tasks into backend services.</p>
+                    <p>This included tasks such as: calculating course scores, downloading gradebooks, data exporting, and instructor test grading of assignments.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/gradebook.png"
+                        alt="feedback"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Created multiple simple UIs to allow instructors to manage large amounts of student data on a single screen.</p>
+                    <p>These features enable instructors to actually respond to student concerns such as challenging their grade and having their response reviewed by their instructor.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/challenges.png"
+                        alt="feedback"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Redesigned the instructor assignment UI to organize and clarify an overwhelming number of options and restrictions.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/assignment-edit.png"
+                        alt="feedback"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <p>Retrofitted the entire student UI with a responsive layout. Enabling students to view their course and submit on any device.</p>
+                </div>
+                <div class="six columns">
+                    <img
+                        src="../img/projects/sagrader/responsive.png"
+                        alt="responsive student UI"
+                    />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="eight offset-by-two columns">
+                    <p>I've also fixed 325 tickets, written 7,982 tests, and single-handedly run SAGrader for three years.</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/projects.js"></script>
+    </body>
+</html>
