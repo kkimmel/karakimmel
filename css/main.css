@@ -146,6 +146,11 @@ img {
     margin-top: 5%;
 }
 
+.sagrader .six.columns img:hover,
+.reviseabl .six.columns img:hover {
+    opacity: 0.7;
+}
+
 /* Reorder columns of third row when grid inactive */
 @media (min-width: 550px) {
     .index .row:nth-child(3) .columns {
@@ -198,6 +203,14 @@ img {
     border-left: 7px solid #999;
 }
 
+.navigation .arrow:hover {
+    background-color: #f9f9f9;
+}
+
+.navigation .arrow:hover:after {
+    border-left: 7px solid #f9f9f9;
+}
+
 .navigation a {
     text-decoration: none;
     font-size: 13px;
@@ -243,6 +256,10 @@ img {
     padding: 25px;
     cursor: pointer;
     margin-bottom: 20px;
+}
+
+.projects .row.link:hover {
+    background-color: #f9f9f9;
 }
 
 .projects .row.link a {
